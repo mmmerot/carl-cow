@@ -1,27 +1,32 @@
-# Portfolio webby
+#portfolio webby
 
-Open `index.html` in a browser to preview the site. The site is responsive and uses no build tools.
+Open `index.html` to preview. The **Customize** drawer now has an individual colour control for every major component:
 
-## Add your own paintings
+- Page background
+- Cards, navigation and panels
+- Main text
+- Secondary text
+- Accent colour
+- Buttons
+- Button text
+- Borders
+- Mini-game wall
+- Mini-game floor
+- Inputs and reaction backgrounds
 
-Open `index.html` in a text editor and search for `const paintings=`. Replace each sample painting's title, details, finished image, process image, and note. For dependable hosting, create an `images` folder next to `index.html` and use paths such as `images/garden.jpg`.
+The default palette is a subdued cow-in-nature scheme using cream, soil brown, moss green, hay, and charcoal. Select **Cow in Nature preset** to restore it.
 
-## Publish on GitHub Pages
+Settings are saved in the current browser. To make chosen colours permanent for every visitor, copy the selected hex values into the `:root` block at the top of `index.html`, replacing the existing values.
 
-1. Sign in to GitHub and create a new public repository, for example `painting-portfolio`.
-2. Unzip this package.
-3. In the repository, choose **Add file > Upload files**.
-4. Upload `index.html` and your optional `images` folder. Keep `index.html` at the repository root.
-5. Commit the files.
-6. Open **Settings > Pages**.
-7. Under **Build and deployment**, choose **Deploy from a branch**.
-8. Choose **main** and **/(root)**, then save.
-9. Return to the Pages settings to see the published URL.
-10. For later changes, use GitHub's pencil icon or upload updated files and commit again.
+## GitHub update steps
 
-## Important static-site note
+1. Unzip this package.
+2. Open your GitHub website repository.
+3. Select the existing `index.html` and use the pencil icon, or choose **Add file > Upload files**.
+4. Replace the old `index.html` with this one.
+5. Commit the change to `main`.
+6. GitHub Pages will redeploy the updated site.
 
-The included guestbook, reactions, and settings use browser `localStorage`. They work immediately, but each visitor sees only their own entries and reactions. To share entries across visitors, connect Firebase, Supabase, or another serverless database and add security rules, rate limiting, spam filtering, and moderation. Never place administrator secrets in `index.html`.
+Replace the sample paintings by searching for `const paintings=` in `index.html`.
 
-The current artwork images are online placeholders. Replace them with your own files before launch.
-
+Guestbook entries, reactions, and custom settings use browser local storage, so they are not shared between visitors on the static version.
