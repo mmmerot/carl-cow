@@ -1,4 +1,4 @@
-# Whimsical Painting Portfolio
+# Portfolio webby
 
 Open `index.html` in a browser to preview the site. The site is responsive and uses no build tools.
 
